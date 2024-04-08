@@ -15,7 +15,8 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-Route::get('/',[AuthController::class,'Login']);
+Route::get('/',[AuthController::class,'home']);
+Route::get('login',[AuthController::class,'Login']);
 Route::get('forgot',[AuthController::class,'forgot']);
 Route::post('login_post',[AuthController::class,'login_post']);
 
